@@ -2,6 +2,8 @@
 
 April 3, 2026
 
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/6d31a18a-e655-432d-b03a-29d9c08fccc7" />
+
 <img width="400" height="162" alt="image" src="https://github.com/user-attachments/assets/4f00fea0-f4a3-491d-9c43-6efbdbe0f51b" />
 
 This project demonstrates how to perform end-to-end (E2E) testing using Cypress. The goal is to simulate real user interactions in a web application and verify that the application behaves as expected.
