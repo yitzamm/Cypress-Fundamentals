@@ -4,8 +4,6 @@ April 3, 2026
 
 <img width="480" height="240" alt="image" src="https://github.com/user-attachments/assets/0fc9f005-fee2-4364-a335-d49bf121ba21" />
 
-<img width="1033" height="544" alt="image" src="https://github.com/user-attachments/assets/a8b0da3d-a910-4b15-806b-2e12563bbf3d" />
-
 This project demonstrates how to perform end-to-end (E2E) testing using Cypress. The goal is to simulate real user interactions in a web application and verify that the application behaves as expected.
 
 It focuses on validating user flows such as navigation, clicking elements, and entering data into input fields. The project also introduces how automated UI testing fits into modern development workflows and quality assurance practices.
