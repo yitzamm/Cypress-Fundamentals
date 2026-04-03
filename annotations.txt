@@ -1,0 +1,102 @@
+Cypress Fundamentals
+
+Cypress simulates a real user using a browser. It:
+
+Opens a website
+Clicks buttons
+Types text
+Checks if things work correctly
+
+PROJECT SET UP
+
+1- Create a project folder:
+
+mkdir cypress-demo
+cd cypress-demo
+
+2- Initialize project:
+
+npm init -y
+
+NOTE: This creates a file called package.json (project confirguration + list of dependencies)
+
+3- Install Cypress:
+
+sudo apt update
+sudo apt install npm
+npm install cypress --save-dev
+
+npm install -> install package
+cypress -> tool
+--save-dev -> dev tool, not part of your app
+
+NOTE: It will now appear in package.json
+
+ERROR: Unsupported engine. Required node v20, current node v18
+
+TS: Install NVM manager (allows you yo switch node versions easily)
+
+4- Install NVM
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+5- Activate NVM
+
+source ~/.bashrc
+
+NOTE: This reloads your terminal config so nvm works
+
+6- Verify installation
+
+nvm --version
+
+7- Install Node 20
+
+nvm install 20
+nvm use 20
+node -v
+
+8- Clean and reinstall project
+
+rm -rf node_modules package-lock.json
+npm install
+
+9- Open Cypress:
+
+npx cypress open
+
+NOTE: The npx command runs a package without installing it globally. When it opens choose E2E testing. It created folders automatically.
+
+10- Create an UI E2E test
+
+Inside the cypress project go to the cypress directory and create a subfolder called e2e:
+
+cd cypress/
+ls
+mkdir e2e
+cd e2e/
+touch test.cy.js
+
+Common built-it commands:
+
+<describe> groups related tests together, and <it> defines individual test cases. <cy.visit> opens the application under test, while <cy.get> and <cy.contains> are used to locate elements—either by CSS selectors or visible text. Commands like <.type()> and <.click()> simulate user interactions, and <.should()> is used for assertions to verify that the application behaves as expected.
+
+11- Push to GitHub
+
+git init
+git remote add origin URL
+git remote -v
+gh auth login
+git pull
+git checkout main
+
+Create .gitignore file:
+
+node_modules/
+cypress/videos/
+cypress/screenshots/
+
+git rm -r --cached node_modules
+git add .
+git commit -m "Initial commit"
+git push -u origin main
